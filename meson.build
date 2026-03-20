@@ -23,4 +23,10 @@ exe = executable(
   dependencies : dependencies,
 )
 
-test('basic', exe)
+sort_test_exe = executable('SortingTests',
+  'tests/Sorting/test.cpp'
+)
+test('SortingTests', sort_test_exe)
+
+
+
