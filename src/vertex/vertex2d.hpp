@@ -13,12 +13,15 @@ public:
 
     // Vector operations
     Vertex2D scalar_product(float scalar) const;
-    float dot_product(Vertex2D &rhs) const;
+    float dot_product(const Vertex2D &rhs) const;
+    float length() const;
+    Vertex2D normalized() const;
 
     // Operator overloads
-    Vertex2D operator+(Vertex2D &rhs) const;
-    Vertex2D operator-(Vertex2D &rhs) const;
-    Vertex2D operator*(Vertex2D &rhs) const;
+    Vertex2D operator+(const Vertex2D &rhs) const;
+    Vertex2D operator-(const Vertex2D &rhs) const;
+    Vertex2D operator*(const Vertex2D &rhs) const;
+    Vertex2D operator/(const Vertex2D &rhs) const;
 };
 
 #endif // !VERTEX2D_HPP
