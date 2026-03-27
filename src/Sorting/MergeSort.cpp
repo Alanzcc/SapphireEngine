@@ -1,8 +1,8 @@
 #include <vector>
 using namespace std;
 
-void merge(vector<float> &vec, int left,
-           int mid, int right)
+void merge(vector<float>& vec, int left,
+    int mid, int right)
 {
 
     int n1 = mid - left + 1;
@@ -58,7 +58,7 @@ void merge(vector<float> &vec, int left,
 
 // begin is for left index and end is right index
 // of the sub-array of vec to be sorted
-void merge_sort(vector<float> &vec, int left, int right)
+void merge_sort(vector<float>& vec, int left, int right)
 {
 
     if (left >= right)

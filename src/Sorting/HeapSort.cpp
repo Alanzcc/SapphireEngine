@@ -2,7 +2,7 @@
 #include <algorithm>
 using namespace std;
 
-void heapify(vector<float> &vec, int len, int index)
+void heapify(vector<float>& vec, int len, int index)
 {
     int largest = index;
     int left = 2 * largest + 1;
@@ -23,9 +23,9 @@ void heapify(vector<float> &vec, int len, int index)
     }
 }
 
-void heap_sort(vector<float> &vec)
+void heap_sort(vector<float>& vec)
 {
-    for (int i =  vec.size() / 2 - 1; i >= 0; i--)
+    for (int i = vec.size() / 2 - 1; i >= 0; i--)
     {
         heapify(vec, vec.size(), i);
     }

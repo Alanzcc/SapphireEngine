@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-void insertion_sort(vector<float> &vec)
+void insertion_sort(vector<float>& vec)
 {
     int len = vec.size();
     for (int i = 1; i < len; ++i)

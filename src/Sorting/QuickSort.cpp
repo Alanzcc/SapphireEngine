@@ -1,7 +1,7 @@
 #include <algorithm>
 using namespace std;
 
-size_t medianOfThree(const vector<float> &vec, int low, int high)
+size_t median_of_three(const vector<float>& vec, int low, int high)
 {
     int mid = low + (high - low) / 2;
     if ((vec[low] < vec[mid]) != (vec[low] < vec[high]))
@@ -18,10 +18,10 @@ size_t medianOfThree(const vector<float> &vec, int low, int high)
     }
 }
 
-int partition(vector<float> &vec, int low, int high)
+int partition(vector<float>& vec, int low, int high)
 {
     // Use median-of-three to choose the pivot
-    swap(vec[medianOfThree(vec, low, high)], vec[high]);
+    swap(vec[median_of_three(vec, low, high)], vec[high]);
     float pivot = vec[high];
 
     int i = low - 1;
@@ -37,7 +37,7 @@ int partition(vector<float> &vec, int low, int high)
     return i + 1;
 }
 
-void quick_sort(vector<float> &vec, int low, int high)
+void quick_sort(vector<float>& vec, int low, int high)
 {
     if (low < high)
     {

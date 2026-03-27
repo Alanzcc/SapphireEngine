@@ -5,7 +5,7 @@ using namespace std;
 #include "HeapSort.cpp"
 #include "QuickSort.cpp"
 
-void introspection(vector<float> &vec, int low, int high, int depthLimit)
+void introspection(vector<float>& vec, int low, int high, int depthLimit)
 {
     if (vec.size() < 16)
     {
@@ -23,7 +23,7 @@ void introspection(vector<float> &vec, int low, int high, int depthLimit)
     }
 }
 
-void intro_sort(vector<float> &vec)
+void intro_sort(vector<float>& vec)
 {
     int maxDepth = static_cast<int>(2 * log2(vec.size()));
     introspection(vec, 0, vec.size() - 1, maxDepth);

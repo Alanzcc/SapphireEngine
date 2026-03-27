@@ -3,7 +3,7 @@
 using namespace std;
 
 // Selection sort function
-void selection_sort(vector<float> &vec)
+void selection_sort(vector<float>& vec)
 {
     int length = vec.size();
     // Traverse the entire array (excluding the last element)
