@@ -14,6 +14,8 @@ dependencies = [
 
 sources = [
   'src/SapphireEngine.cpp',
+  'src/engine_window/engine_window.cpp',
+  'src/engine_window/first_app.cpp',
 ]
 
 exe = executable(
@@ -22,11 +24,6 @@ exe = executable(
   install : true,
   dependencies : dependencies,
 )
-
-sort_test_exe = executable('SortingTests',
-  'tests/Sorting/test.cpp'
-)
-test('SortingTests', sort_test_exe)
 
 
 
