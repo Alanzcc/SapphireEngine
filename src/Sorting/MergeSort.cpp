@@ -1,7 +1,6 @@
 #include <vector>
-using namespace std;
 
-void merge(vector<float>& vec, int left,
+void merge(std::vector<float>& vec, int left,
     int mid, int right)
 {
 
@@ -9,7 +8,7 @@ void merge(vector<float>& vec, int left,
     int n2 = right - mid;
 
     // Create temp vectors
-    vector<float> L(n1), R(n2);
+    std::vector<float> L(n1), R(n2);
 
     // Copy data to temp vectors L[] and R[]
     for (int i = 0; i < n1; i++)
@@ -58,7 +57,7 @@ void merge(vector<float>& vec, int left,
 
 // begin is for left index and end is right index
 // of the sub-array of vec to be sorted
-void merge_sort(vector<float>& vec, int left, int right)
+void merge_sort(std::vector<float>& vec, int left, int right)
 {
 
     if (left >= right)

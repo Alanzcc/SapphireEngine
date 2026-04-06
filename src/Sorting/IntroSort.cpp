@@ -1,11 +1,11 @@
 #include <cmath>
 #include <vector>
-using namespace std;
+
 #include "InsertionSort.cpp"
 #include "HeapSort.cpp"
 #include "QuickSort.cpp"
 
-void introspection(vector<float>& vec, int low, int high, int depthLimit)
+void introspection(std::vector<float>& vec, int low, int high, int depthLimit)
 {
     if (vec.size() < 16)
     {

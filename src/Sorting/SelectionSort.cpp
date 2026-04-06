@@ -1,9 +1,8 @@
 #include <vector>
 #include <algorithm>
-using namespace std;
 
 // Selection sort function
-void selection_sort(vector<float>& vec)
+void selection_sort(std::vector<float>& vec)
 {
     int length = vec.size();
     // Traverse the entire array (excluding the last element)
@@ -24,7 +23,7 @@ void selection_sort(vector<float>& vec)
         // Swap only if a smaller element was found
         if (jMin != i)
         {
-            swap(vec[i], vec[jMin]);
+            std::swap(vec[i], vec[jMin]);
         }
     }
 }

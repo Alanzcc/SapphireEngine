@@ -1,8 +1,7 @@
 #include <vector>
 #include <algorithm>
-using namespace std;
 
-void heapify(vector<float>& vec, int len, int index)
+void heapify(std::vector<float>& vec, int len, int index)
 {
     int largest = index;
     int left = 2 * largest + 1;
@@ -18,12 +17,12 @@ void heapify(vector<float>& vec, int len, int index)
     }
     if (largest != index)
     {
-        swap(vec[index], vec[largest]);
+        std::swap(vec[index], vec[largest]);
         heapify(vec, len, largest);
     }
 }
 
-void heap_sort(vector<float>& vec)
+void heap_sort(std::vector<float>& vec)
 {
     for (int i = vec.size() / 2 - 1; i >= 0; i--)
     {
@@ -31,7 +30,7 @@ void heap_sort(vector<float>& vec)
     }
     for (int i = vec.size() - 1; i > 0; i--)
     {
-        swap(vec[0], vec[i]);
+        std::swap(vec[0], vec[i]);
         heapify(vec, i, 0);
     }
 }
