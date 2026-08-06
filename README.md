@@ -1,4 +1,12 @@
-# My FOOLISH attempt at developing a game engine in C++ Vulkan and solving some university tasks along the way
+This is a game engine with a focus on ray tracing
+
+## Project Dependencies:
+- C++23
+- Meson
+- pkg-config
+- Vulkan 1.4
+- GLFW3
+- GLM
 
 ## MacOS Setup for Vulkan:
 - Download and run XCode to download the needed toolchains
@@ -8,8 +16,8 @@
 
 ### Helpful Link: https://vulkan.lunarg.com/doc/view/1.3.280.1/mac/getting_started.html
 
-## MacOS setup for GLFW:
-- run $ "brew install cmake glfw"
+## MacOS for the rest:
+- run $ "brew install cmake glfw pkg-config meson glm"
 
 
 ## To run the project run the command:
